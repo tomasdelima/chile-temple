@@ -1,0 +1,30 @@
+<h3 class="feature">Inscrição</h3>
+<p class="text-left">
+  Registre seu grupo para participar da inauguração do Templo do Chile.
+</p>
+
+<div class="btn btn-success join">Quero me inscrever para a inauguração!</div>
+
+<div class="alert alert-success">Seu grupo foi salvo com sucesso</div>
+<div class="alert alert-danger error">Houve um erro ao salvar o seu grupo</div>
+
+<%= nested_form_for @group, remote: true do |g| %>
+  <%= g.fields_for :people do |p| %>
+    <div class="field-set">
+      <span class="field">
+        <%= p.label :name %>
+        <%= p.text_field :name %>
+      </span>
+
+      <span class="field">
+        <%= p.label :email %>
+        <%= p.text_field :email %>
+      </span>
+      <%= p.link_to_remove "", class: "btn btn-danger glyphicon glyphicon-remove" %>
+    </div>
+  <% end %>
+
+  <%= g.link_to_add "<i class='glyphicon glyphicon-plus'></i> Pessoa".html_safe, :people, class: "btn btn-primary" %>
+
+  <%= g.submit 'Salvar', class: 'btn btn-success save' %>
+<% end %>
