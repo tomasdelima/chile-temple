@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChileTemple</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'/>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100' rel='stylesheet' type='text/css'/>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/stylesheet.css"/>
+  <script src="assets/material.min.js"></script>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>
