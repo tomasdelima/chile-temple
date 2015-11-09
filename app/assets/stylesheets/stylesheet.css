@@ -287,6 +287,11 @@ li.title{
 
 }
 
+div.person-group{
+	background-color: #57729C;
+	margin-bottom: 15px;
+}
+
 /*----------back to top menu---------*/
 div.back-to-top-btn{
 	position: fixed;
