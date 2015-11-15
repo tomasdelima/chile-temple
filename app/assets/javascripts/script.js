@@ -5,15 +5,15 @@ function toggle_drawer() {
 }
 
 function showBackTop(){
-		document.getElementById('backToTopButton').style.visibility = 'visible';
+  document.getElementById('backToTopButton').style.visibility = 'visible';
 }
 
 function hideBackTop(){
-	document.getElementById('backToTopButton').style.visibility = 'hidden';
+  document.getElementById('backToTopButton').style.visibility = 'hidden';
 }
 
 function hideIfTop(){
-	if (window.pageYOffset==0){
-	        document.getElementById("backToTopButton").style.visibility = "hidden";
-	}
+  if (window.pageYOffset==0){
+    document.getElementById("backToTopButton").style.visibility = "hidden";
+  }
 }

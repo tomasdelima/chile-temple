@@ -17,7 +17,7 @@
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
 </head>
 
-<body>
+<body onload="hideBackTop()" onscroll="hideIfTop()">
   <%= yield %>
 </body>
 </html>

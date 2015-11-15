@@ -12,13 +12,11 @@
   <%= g.fields_for :people do |p| %>
     <div class="field-set">
       <span class="field">
-        <%= p.label :name %>
-        <%= p.text_field :name %>
+        <%= p.text_field :name, class: "name", placeholder: 'Nome' %>
       </span>
 
       <span class="field">
-        <%= p.label :email %>
-        <%= p.text_field :email %>
+        <%= p.text_field :email, class: "email", placeholder: 'E-mail' %>
       </span>
       <%= p.link_to_remove "", class: "btn btn-danger glyphicon glyphicon-remove" %>
     </div>
