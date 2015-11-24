@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'groups/controller'
+  devise_for :admin
+  get 'admin/index', as: :admin_root
 
   root to: 'home#index'
-
   resources :groups
+
+  get 'groups/controller'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
