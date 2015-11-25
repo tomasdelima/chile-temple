@@ -26,12 +26,20 @@
 
     input {
       padding-left: 10px;
+      border-radius: 3px;
+      border-width: 0;
+      height: 30px;
+
+      &.error {
+        border: 1px solid #f66;
+      }
     }
 
     .btn-danger {
       width: 34px;
       border-radius: 100px;
       padding-left: 8.5px;
+      top: -1px;
     }
   }
 }

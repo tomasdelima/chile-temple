@@ -13,4 +13,16 @@ $(document).ready(function(){
     $(".join").hide()
     $('#new_group').slideDown()
   })
+
+  $(".save").on('click', function () {
+    var errors = 0
+    $(".name, .email").removeClass('error')
+    $(".name, .email").map(function (i, element) {
+      if(!element.value) {
+        errors += 1
+        $(element).addClass('error')
+      }
+    })
+    return !errors
+  })
 })

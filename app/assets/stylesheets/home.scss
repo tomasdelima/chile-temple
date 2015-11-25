@@ -255,7 +255,6 @@ div.separador {
 .map-container {
   /*background-color: #57729C;*/
   background-color: #ECD779;
-  margin-bottom:5%;
   padding-top: 20px;
   padding-bottom: 5%;
   padding-left: 10%;
@@ -275,7 +274,6 @@ address {
 
 div.footer {
   background: #57729C;
-  margin-top: 15px;
   padding-top: 15px;
 }
 
@@ -288,6 +286,11 @@ div.copyright {
 li.title {
   color: #ECD779;
   font-weight: bold;
+}
+
+.mdl-navigation__link {
+  color: white;
+  font-weight: 400;
 }
 
 div.person-group {
