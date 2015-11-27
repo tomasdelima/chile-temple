@@ -1,0 +1,53 @@
+<div id="<%= id %>">
+  <!-- Desktop -->
+  <!-- <div class="row feature hidden-xs"> -->
+  <div class="row feature">
+    <% if image_side == 'left' %>
+      <div class="col-md-4 col-sm-4">
+        <img src="assets/square.png" class="img-circle img-responsive feature">
+      </div>
+    <% end %>
+
+    <div class="col-md-8 col-sm-8 text-center">
+      <h3 class="feature"><%= title %></h3>
+      <% content.each do |item| %>
+        <% if item.class == Hash %>
+          <blockquote class="mainquote baroque">
+            <%= item[:quote] %>
+            <footer class="mainitemquote"><%= item[:quote_author] %></footer>
+          </blockquote>
+        <% else %>
+          <p class="text-left">
+            <%= item.html_safe %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+
+
+    <% if image_side == 'right' %>
+      <div class="col-md-4 col-sm-4">
+        <img src="assets/square.png" class="img-circle img-responsive feature">
+      </div>
+    <% end %>
+  </div>
+
+<!-- Mobile -->
+<!--
+  <div class="row feature visible-xs">
+    <div class="col-xs-12 centro">
+      <img src="assets/square.png" class="img-circle img-responsive center-block feature-xs">
+    </div>
+    <div class="col-xs-12 centro">
+      <h3 class="feature">Construindo Comunidades</h3>
+    </div>
+  </div>
+
+  <div class="row feature visible-xs">
+    <div class="col-xs-12 text-center">
+      <p>
+
+      </p>
+    </div>
+  </div> -->
+</div>

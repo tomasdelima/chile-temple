@@ -1,20 +1,21 @@
-default: &default
+default: &sqlite
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+
+default: &postgresql
   adapter: postgresql
   encoding: unicode
   pool: 5
 
 development:
-  <<: *default
-  database: chile_temple_development
-  host: localhost
-  username: developer
+  <<: *sqlite
+  database: db/development.sqlite3
 
 test:
-  <<: *default
-  database: chile_temple_test
-  host: localhost
-  username: developer
+  <<: *sqlite
+  database: db/test.sqlite3
 
 production:
-  <<: *default
+  <<: *postgresql
   database: db/production.sqlite3

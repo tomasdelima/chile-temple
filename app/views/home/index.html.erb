@@ -47,166 +47,115 @@
 
   <!-- Features -->
   <div class="container">
-    <!-- Primeira feature -->
-    <div id="ft1">
-      <!-- desktop -->
-      <div class="row feature hidden-xs">
-        <div class="col-md-4 col-sm-4">
-          <img src="assets/square.png" class="img-circle img-responsive feature">
-        </div>
-        <div class="col-md-8 col-sm-8 text-center">
-          <h3 class="feature">O Templo Bahá'í</h3>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-        </div>
-      </div>
-
-      <!-- Mobile -->
-      <div class="row feature visible-xs">
-        <div class="col-xs-12 centro">
-          <img src="assets/square.png" class="img-circle img-responsive center-block feature-xs">
-        </div>
-        <div class="col-xs-12 centro">
-          <h3 class="feature">Construindo Comunidades</h3>
-        </div>
-      </div>
-
-      <div class="row feature visible-xs">
-        <div class="col-xs-12 text-center">
-          <p>
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-        </div>
-      </div>
-    </div>
+    <%= render partial: 'feature', locals: {
+      id: 'ft1',
+      image_side: 'left',
+      title: "O Templo Bahá'í",
+      content: [
+        {
+          quote: 'Suas portas estão abertas a todas as nações e a todas as religiões... sem preconceito para com ninguém, e com amor para todos.',
+          quote_author: "Escrituras bahá'ís",
+        },
+        'Os templos bahá’ís, também conhecidos como Casas de Adoração, são edifícios silenciosos e abertos a todas as pessoas com desejos de orar, meditar ou refletir, independentemente de sua afiliação religiosa, origem, etnia ou gênero.',
+        'Refúgios para a contemplação mais profunda sobre a realidade espiritual e de temas fundamentais para a vida – inclusa a responsabilidade individual e coletiva para o melhoramento da sociedade -, os templos bahá’ís acolhem como iguais aos homens e mulheres, crianças e jovens. Ainda que possam variar entre sí em seu estilo arquitetônico, todas possuem nove lados e uma cúpula que, ao mesmo templo, simbolizam a diversidade da raça humana e sua unidade essencial.',
+      ]
+    } %>
 
     <div class="separador"></div>
 
-    <!-- segunda feature -->
-    <div id="ft2">
-      <!--desktop-->
-      <div class="row feature hidden-xs">
-        <div class="col-md-8 col-sm-8 text-center">
-          <h3 class="feature">Comunidades e o Templo</h3>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <img src="assets/square.png" class="img-circle img-responsive feature">
-        </div>
-      </div>
-
-      <!--Mobile-->
-      <div class="row feature visible-xs">
-        <div class="col-xs-12 centro">
-          <img src="assets/square.png" class="img-circle img-responsive center-block feature-xs">
-        </div>
-        <div class="col-xs-12 centro">
-          <h3 class="feature">Construindo Comunidades</h3>
-        </div>
-      </div>
-
-      <div class="row feature visible-xs">
-        <div class="col-xs-12 text-center">
-          <p>
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-        </div>
-      </div>
-    </div>
+    <%= render partial: 'feature', locals: {
+      id: 'ft2',
+      image_side: 'right',
+      title: "A Inauguração do Templo da América do Sul",
+      content: [
+        'Os eventos associados com a histórica inauguração da Casa de Adoração da América do Sul, localizada em Santiago, Chile, ocorrerão no período de 13 a 16 de outubro de 2016.',
+        'Uma grande conferencia está prevista para um Centro de Convenções e o programa incluirá sessões plenárias e visitas de grupos à Casa de Adoração para cerimonias de dedicação, além de momentos para visitas aos jardins do Templo.',
+        'O numero de participantes está limitado a 5.000 pessoas, sendo 3.000 para residentes na América Latina e países de fala hispânica e portuguesa da Península Ibérica e da África. Os outros 2.000 participantes serão de amigos provenientes de outras partes do mundo.',
+        'À partir de janeiro de 2016, los amigos que tenham interesse em participar no programa de inauguração, terão a oportunidade de inscrever-se diretamente no site do Templo do Chile - <a target="blank" href="http://templo.bahai.cl/dedicacion">http://templo.bahai.cl/dedicacion</a> ou através de sua Assembleia Espiritual Nacional.',
+      ],
+    } %>
 
     <div class="separador"></div>
 
-    <!-- terceira feature -->
-    <div id="ft3">
-      <!-- Desktop  -->
-      <div class="row feature hidden-xs">
-        <div class="col-md-4 col-sm-4">
-          <img src="assets/square.png" class="img-circle img-responsive feature">
-        </div>
-        <div class="col-md-8 col-sm-8 text-center">
-          <h3 class="feature">A Inauguração do Templo</h3>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-          <p class="text-left">
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
-        </div>
-      </div>
+    <%= render partial: 'feature', locals: {
+      id: 'ft3',
+      image_side: 'left',
+      title: "Oração e serviço",
+      content: [
+        'Assim como o corpo humano necessita nutrir-se para seu desenvolvimento, a oração regular provê alimento espiritual que sustenta a vida do espírito. Tal como o orvalho da manhã, ela traz frescor ao coração e o limpa, purificando-o dos apegos ao ego insistente. É também a conversação espiritual essencial da alma com seu Criador, íntima e sem intermediários, oferecendo a oportunidade de buscar Sua ajuda, refletir sobre o significado e propósito da vida, ansiar por Sua guia, ou simplesmente expressar amor e agradecimento genuínos.',
+        {
+          quote: 'Nada há mais doce no mundo da existência do que a oração... A condição mais bendita é a condição de oração e de súplica.',
+          quote_author: "Escrituras bahá'ís",
+        },
+        'Os ensinamentos bahá’ís estimulam que cada pessoa dedique tempo diário para a oração e a meditação, pois estes atos elevam o coração e iluminam a faculdade racional. Uma oração oferecida com sinceridade, acompanhada de reflexão meditada, enrique a compreensão da realidade e pode lançar novas luzes sobre as ações do dia-a-dia, e tem o potencial de inspirar uma atitude de serviço desprendido aos demais.',
+        'O impulso de servir aos demais nasce de um modo natural quando o coração sente amor, vindo, então, a generosidade caracterizar a conduta humana. Assim como o propósito de uma vela é entregar sua luz, a alma foi criada para entregar-se de forma generosa aos demais.',
+        'Assim, servir ao próximo é também uma forma de oração. Na verdade, qualquer trabalho realizado em espírito de serviço ao próximo se converte numa expressão de amor ao Criador.',
+        {
+          quote: 'O homem que faz uma folha de papel com o máximo de sua habilidade, conscienciosamente, concentrando toda a eficiência em aperfeiçoá-la, está louvando a Deus. Em poucas palavras, todo esforço, toda função desempenhada pelo homem, de todo o coração, se for movida pelos mais nobres propósitos e pelo desejo de servir à humanidade, é adoração.',
+          quote_author: "Escrituras bahá'ís",
+        },
+        'Assim como a vida espiritual de um indivíduo é cultivada através da oração e do serviço, isto se dá igualmente no nível coletivo. Quando as pessoas se reúnem para orar, aumenta em seus corações o sentimento de unidade e de afeto mútuo. Deste modo, uma comunidade pode adquirir a força necessária para superar os sinais de desintegração e converter-se em uma fonte de unidade e bem-estar.',
+      ]
+    } %>
 
-      <!-- Mobile -->
-      <div class="row feature visible-xs">
-        <div class="col-xs-12 centro">
-          <img src="assets/square.png" class="img-circle img-responsive center-block feature-xs">
-        </div>
-        <div class="col-xs-12 centro">
-          <h3 class="feature">Construindo Comunidades</h3>
-        </div>
-      </div>
+    <div class="separador"></div>
 
-      <div class="row feature visible-xs">
-        <div class="col-xs-12 text-center">
-          <p>
-            Minions ipsum but me want bananaaa! Bappleees poopayee poopayee chasy wiiiii belloo! Jiji. Tulaliloo hahaha wiiiii gelatooo bee do bee do bee do daa baboiii me want bananaaa! Gelatooo me want bananaaa! Daa ti aamoo! Hahaha underweaaar tank yuuu! Jeje. Butt uuuhhh daa potatoooo.
-          </p>
+    <%= render partial: 'feature', locals: {
+      id: 'ft4',
+      image_side: 'right',
+      title: "Construção de comunidades e o Templo",
+      content: [
+        'O emergir gradual de uma consciência sobre a realidade espiritual do ser humano, sua aspiração natural à transcendência; os impulsos da alma em busca de conexão com o sagrado através da prece e do serviço ao próximo.',
+        'À medida em que pequenas reuniões de orações ou atos de adoração coletiva são estabelecidos e realizados de modo regular nos ambientes da intimidade do lar, promovendo afeição cordial e abrigando uma variedade mais ampla de pessoas em seu amplexo, torna-se um refugio contra as forças do materialismo e local para uma mais profunda contemplação da realidade espiritual e para a conversação sobre questões fundamentais da vida, incluindo a responsabilidade individual e coletiva pra a melhora da sociedade.',
+        'Diálogos animados se proliferam entre os participantes e uma tecitura mais rica de vida comunitária vai emergindo. Tais reuniões de caráter devocional são também entrelaçadas com atividades que provêm educação espiritual a todos os membros da vizinhança – adultos, jovens e crianças, ampliando-se a consciência social e o desejo de promover ações que possam beneficiar a toda a coletividade.',
+        'As <a target="blank" href="http://www.bahai.org.br/acao-social/reunioes-devocionais">reuniões devocionais</a> tornam-se os embriões dos futuros Templos, como local donde devem se irradiar forças espirituais e um ponto focal para ações visando o bem-estar da comunidade, instilando em cada um a vontade e o anseio por servir.',
+      ],
+    } %>
+
+    <div class="separador"></div>
+
+    <%= render partial: 'feature', locals: {
+      id: 'ft5',
+      image_side: 'left',
+      title: "O poder da prece sincera",
+      content: [
+        'A <a target="blank" href="http://www.bahai.org.br/oracoes">prece</a> é a conversação espiritual essencial da alma com seu Criador, direta e sem intermediação. É o alimento espiritual que sustenta a vida do espírito. Tal como o orvalho da manhã, ela traz frescor ao coração e o limpa, purificando-o dos apegos ao ego insistente. É um fogo que queima os véus e uma luz que conduz ao oceano da reunião com o Todo-Poderoso. Nas suas asas, a alma voa nos céus divinos e achega-se à realidade divina. De sua qualidade depende o desenvolvimento das capacidades ilimitadas da alma e a atração das graças de Deus, mas prolongar a prece não é desejável. Os poderes latentes na prece são manifestos quando ela é motivada por amor a Deus, afastado de qualquer temor ou favor, e livre de ostentação e superstição. Devem ser expressos com um coração puro e sincero que conduza a contemplação e meditação, de modo que a faculdade do raciocínio possa ser iluminada pelos seus efeitos. Tal prece transcenderá a limitação das palavras e irá bem além de meros sons. A doçura de suas melodias deve alegrar e elevar o coração e reforçar o poder penetrante da Palavra, transmutando inclinações mundanas em atributos celestiais e inspirando serviço abnegado à humanidade.',
+        '',
+        '',
+        '',
+        {
+          quote: '',
+          quote_author: "Escrituras bahá'ís",
+        }
+      ],
+    } %>
+
+    <div class="separador"></div>
+
+    <%= render partial: 'feature', locals: {
+      id: 'ft6',
+      image_side: 'right',
+      title: "A Fe Bahá’í",
+      content: [
+        {
+          quote: 'Seja vossa visão de âmbito mundial em vez de confinada a vós próprios.',
+          quote_author: "Bahá’u’lláh",
+        },
+        'Ao longo da história, diversos Educadores divinos – conhecidos como Manifestações de Deus – tem trazido Ensinamentos que serviram como a base para o avanço da civilização. Entre estas Manifestações da Divindade encontramos a Abraão, Krishna, Zoroastro, Moisés, Buda, Jesus e Muhammad. Bahá’u’lláh, o mais recente destes Manifestantes, explica que as religiões do mundo provem de uma única Fonte e são, em essência, capítulos sucessivos de uma única religião de Deus.',
+        'Os bahá’ís acreditam que a necessidade mais urgente diante da humanidade é encontrar uma visão unificadora sobre o futuro da sociedade e sobre a natureza e propósito da vida. Uma visão clara sobre estas questões descortina-se nos Escritos de Bahá’u’lláh.',
+      ],
+    } %>
+
+    <div class="separador"></div>
+
+    <div id="ft7">
+      <div class="row feature">
+        <div class="col-md-12 col-sm-12 text-center">
+          <h3 class="feature">Inscrição</h3>
+            <p class="text-center">
+              Para inscrever-se para a inauguração do templo, acesse <a href="http://templo.bahai.cl/dedicacion/">http://templo.bahai.cl/dedicacion/</a>
+            </p>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="content group-container">
-  <div class="person-group new-group row feature">
-    <div class="col-md-12 col-sm-12 text-center">
-      <%= render 'person/form' %>
-    </div>
-  </div>
-</div>
-
-<div id="map" class="map-container">
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="map"> Localização </h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4 hidden-xs hidden-sm">
-      <address>
-        Site: <a href="templo.bahai.cl">templo.bahai.cl</a><br />
-        Informações: <a href="mailto: info@templo.bahai.cl">info@templo.bahai.cl</a><br />
-        Visitas: <a href="mailto: visitas@templo.bahai.cl">visitas@templo.bahai.cl</a><br />
-        Telefone:  (56-9) 8560 9332 <br />
-        Avenida Paulista<br />
-        CEP: 01311-100<br />
-        Peñalolén - Chile
-      </address>
-    </div>
-    <div class="col-md-8 col-sm-12 col-xs-12">
-      <div style="text-decoration:none; overflow:hidden; height:500px; width:100%;">
-        <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
-          <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Templo+Bahai+De+Sudamérica+-+Camino+Privado,+Peñalolén,+Chile&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
-        </div>
-        <a class="embed-map-code" href="https://www.bootstrapskins.com" id="grab-map-data">bootstrap</a>
-        <style>#embedded-map-display .map-generator{max-width: 100%; max-height: 100%; background: none;}</style>
       </div>
     </div>
   </div>
