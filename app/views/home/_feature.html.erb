@@ -4,7 +4,7 @@
   <div class="row feature">
     <% if image_side == 'left' %>
       <div class="col-md-4 col-sm-4">
-        <img src="assets/square.png" class="img-circle img-responsive feature">
+        <img src="assets/<%= image_name %>" class="img-circle img-responsive feature">
       </div>
     <% end %>
 
@@ -27,7 +27,7 @@
 
     <% if image_side == 'right' %>
       <div class="col-md-4 col-sm-4">
-        <img src="assets/square.png" class="img-circle img-responsive feature">
+        <img src="assets/<%= image_name %>" class="img-circle img-responsive feature">
       </div>
     <% end %>
   </div>
