@@ -85,9 +85,14 @@ element {
   border-radius: 0;
   border: 0;
   margin: 0;
+  background: #ddd;
 
-  &, .navbar-header {
+  .navbar-header {
     background: #57729C;
+  }
+
+  #top-menu {
+    background-color: #ddd;
   }
 
   .navbar-nav {
@@ -114,19 +119,23 @@ element {
 
 @media (min-width: 768px) {
   .navbar {
-    .navbar-nav li {
-      width: calc((100% - 49px)/7);
-      max-width: 165px;
+    background: #57729C;
 
-      &#inscription {
-        width: 80px;
-      }
+    .navbar-nav {
+      li {
+        width: calc((100% - 49px)/7);
+        max-width: 165px;
 
-      a {
-        color: white;
+        &#inscription {
+          width: 80px;
+        }
 
-        &:hover {
+        a {
           color: white;
+
+          &:hover {
+            color: white;
+          }
         }
       }
     }
