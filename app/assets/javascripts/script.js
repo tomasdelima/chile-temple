@@ -17,3 +17,7 @@ function hideIfTop(){
     document.getElementById("backToTopButton").style.visibility = "hidden";
   }
 }
+
+$(document).ready(function() {
+  $("#top-carousel").carousel({interval: 4000});
+})
