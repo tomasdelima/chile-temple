@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap
+//= require bootstrap-dropdown
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery_nested_form
