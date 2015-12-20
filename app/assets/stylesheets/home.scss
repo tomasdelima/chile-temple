@@ -95,8 +95,12 @@ element {
 
     li {
       text-align: center;
-      width: calc(100%/6 - 49px/6);
+      width: calc((100% - 49px)/7);
       max-width: 165px;
+
+      &#inscription {
+        width: 80px;
+      }
 
       a {
         padding: 15px 0;
