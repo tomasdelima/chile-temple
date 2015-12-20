@@ -98,6 +98,7 @@ element {
 
   #top-menu {
     background-color: #ddd;
+    margin: 18px;
   }
 
   .navbar-nav {
@@ -113,7 +114,7 @@ element {
         padding: 25px 0;
         color: black;
 
-        &:hover {
+        &:hover, &:focus {
           font-weight: 600;
           color: black;
         }

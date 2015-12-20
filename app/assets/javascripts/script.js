@@ -21,9 +21,9 @@ function hideIfTop(){
 $(document).ready(function() {
   $("#top-carousel").carousel({interval: 4000});
   $("#top-menu").on("click", function() {
-    $(".navbar-collapse").toggleClass("in")
+    $(".navbar-collapse").slideToggle()
   })
   $(".navbar-nav li a").on("click", function() {
-    $(".navbar-collapse").removeClass("in")
+    $(".navbar-collapse").hide()
   })
 })
